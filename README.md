@@ -1,2 +1,4 @@
-unity_googleinapp
-=================
+Unity GoogleInApp for Android
+=============================
+
+
