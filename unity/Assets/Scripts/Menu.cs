@@ -46,7 +46,9 @@ public class Menu : MonoBehaviour {
 
     void OnApplicationFocus(bool focused) {
         if (focused) {
+            #if UNITY_ANDROID
             purchased = inApp.IsItemPurchased(INAPP_ITEM);
+            #endif
         }
     }
 
@@ -54,6 +56,8 @@ public class Menu : MonoBehaviour {
     /// Handles the bind complete event from GoogleInAppPlugin.
     /// </summary>
     public void HandleBindComplete() {
+        #if UNITY_ANDROID
         purchased = inApp.IsItemPurchased(INAPP_ITEM);
+        #endif
     }
 }
