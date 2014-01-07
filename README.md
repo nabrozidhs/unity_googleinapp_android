@@ -3,7 +3,7 @@
 
 ## Overview
 
-(Really) Basic Unity3D plugin for using Google Play In-app billing Version 3 API.
+(Really) Basic Unity3D plugin for Google Play In-app billing Version 3 API.
 
 
 ## Integration
