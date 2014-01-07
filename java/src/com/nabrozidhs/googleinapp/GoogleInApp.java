@@ -80,9 +80,9 @@ public final class GoogleInApp {
      * @return true if the user owns the specified item, false otherwise.
      */
     public boolean isItemPurchased(final String sku) {
-    	if (mService == null) {
-    		return false;
-    	}
+        if (mService == null) {
+            return false;
+        }
 
         try {
             final Bundle purchases = mService.getPurchases(API_VERSION,
@@ -106,10 +106,10 @@ public final class GoogleInApp {
      * @param sku the item's sku.
      */
     public void purchaseItem(final String sku) {
-    	if (mService == null) {
-    		return;
-    	}
-    	
+        if (mService == null) {
+            return;
+        }
+        
         try {
             final Bundle buyIntentBundle = mService.getBuyIntent(API_VERSION,
                     mActivity.getPackageName(), sku, TYPE_INAPP, "");
