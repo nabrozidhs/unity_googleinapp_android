@@ -1,3 +1,12 @@
+# Unity related
+*.csproj
+*.meta
+*.sln
+*.userprefs
+Library/
+ProjectSettings/
+obj/
+
 # Eclipse related
 bin/
 gen/
