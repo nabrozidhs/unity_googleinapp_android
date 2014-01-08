@@ -14,7 +14,10 @@ Just import the file `googleinapp.unitypackage` in your Unity project.
 
 ### Project setup
 
-You need to add the BILLING permission `<uses-permission android:name="com.android.vending.BILLING" />`
+You need to add the BILLING permission
+```xml
+<uses-permission android:name="com.android.vending.BILLING" />
+```
 as specified on the [Android documentation](http://developer.android.com/google/play/billing/billing_integrate.html#billing-permission).
 
 ### Examples
